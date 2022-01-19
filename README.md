@@ -1,5 +1,4 @@
-# IDM216: User Experience Design - El Toro Web Application
-
+# El Toro Web Application - IDM216: User Experience Design 
 ## Links
 - Development: https://dylanroussin.com/idm216/
  
