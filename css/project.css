@@ -1,0 +1,160 @@
+/* IDM 216 Project Details Page */
+
+/* Tushar Rai - Project Manager/Designer */
+/* Dylan Roussin - Coder/Data Architect */
+/* Izzy Heal - Designer/Coder */
+/* Alex Eyo - Data Architect/Project Manager */
+
+
+/* set colors as custom properties */
+:root {
+  --background: #242424;
+  --title: #EA663F;
+  --sub-text: #F3DAD2;
+}
+
+/* import fonts */
+/* Teko Bold https://fonts.google.com/specimen/Teko */
+@font-face {
+  font-family: "Teko-Bold";
+  src: url(../fonts/Teko-Bold.ttf) format("truetype");
+}
+
+/* SF Pro Display */
+@font-face {
+  font-family: "SofiaSans-Regular";
+  src: url(../fonts/SofiaSans-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "SofiaSans-Bold";
+  src: url(../fonts/SofiaSans-Bold.otf) format("opentype");
+}
+
+/* start styles */
+
+/* center and set color */
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: var(--background);
+  flex-flow: column nowrap;
+}
+
+/* center and set width */
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 60%;
+}
+
+.indent {
+  padding: 0 2rem;
+}
+
+/* full size images fill div */
+.full-page {
+  width: 100%;
+  padding: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+/* set wireframe image layout */
+.wireframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap; 
+  margin-bottom: 2rem;
+}
+
+
+/* wireframe image size */
+.wireframe {
+  width: 33%;
+  padding: 1rem;
+}
+
+/* title text */
+.section-title {
+  font-family: "Teko-Bold", sans-serif;
+  color: var(--title);
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+/* copy text */
+.sub-text {
+  font-family: "SofiaSans-Regular", sans-serif;
+  color: var(--sub-text);
+}
+
+/* title and team name */
+.title {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  margin: 4rem 0;
+}
+
+.title h4 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+#page-title {
+  font-family: "Teko-Bold", sans-serif;
+  color: var(--title);
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+
+
+/* team name */
+#team-name {
+  font-family: "SofiaSans-Bold", sans-serif;
+}
+
+/* style guide specifc */
+#teko-bold {
+  font-family: "Teko-Bold", sans-serif;
+  font-size: 2.2rem;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+.sofia-sans {
+  font-family: "SofiaSans-Regular", sans-serif;
+  font-size: 1.4rem;
+  margin: 0;
+  color: var(--sub-text);
+  padding-bottom: 0.75rem;
+}
+
+@media only screen and (max-width: 1254px) {
+  .content {
+    padding: 2rem 5rem;
+  }
+
+  .title {
+    margin: 3rem 0 1.4rem 0;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .full-page {
+    width: 100%;
+  }
+
+  .indent {
+    padding: 0;
+  }
+
+  .wireframe {
+    width: 350px;
+  }
+}
