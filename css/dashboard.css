@@ -1,0 +1,69 @@
+/* Teko Bold https://fonts.google.com/specimen/Teko */
+@font-face {
+  font-family: "Teko-Bold";
+  src: url(../fonts/Teko-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "SofiaSans-Regular";
+  src: url(../fonts/SofiaSans-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "SofiaSans-Bold";
+  src: url(../fonts/SofiaSans-Bold.otf) format("opentype");
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+h1 {
+  font-family: "Teko-Bold";
+  margin: 0;
+  font-size: 3rem;
+  padding-bottom: 0;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+}
+
+table {
+  width: 1000px;
+}
+
+th {
+  text-align: left;
+  font-family: "SofiaSans-Bold";
+  font-weight: bold;
+  background-color: #ff8f70;
+}
+td {
+  font-family: "SofiaSans-Regular";
+}
+
+.columns {
+  display: flex;
+  flex-flow: row;
+  width: 1000px;
+  font-family: "SofiaSans-Regular";
+  justify-content: center;
+}
+
+.columns p {
+  padding: 0 0.5rem;
+}
+
+#column-title {
+  font-family: "SofiaSans-Bold";
+}
