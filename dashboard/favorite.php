@@ -26,6 +26,10 @@ $results = mysqli_query($db_connection, $query);
   </div>
 
   <div class="content">
+  <nav>
+      <a href='index.php'>All</a>
+      <a href='favorite.php'>Favorites</a>
+    </nav>
     <table>
       <!-- Table headings -->
       <tr>
@@ -44,6 +48,7 @@ $results = mysqli_query($db_connection, $query);
       }
       ?>
     </table>
+    
   </div>
 
 </body>
