@@ -20,6 +20,11 @@ $results = mysqli_query($db_connection, $query);
 
   <h1><?php echo $site_title ?></h1>
 
+  <div class="columns">
+    <p id="column-title">Columns:</p>
+    <?php include 'includes/category.php' ?>
+  </div>
+
   <div class="content">
     <table>
       <!-- Table headings -->
