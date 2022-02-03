@@ -1,5 +1,5 @@
 <?php
-// list favorites
+// ! NOT CURRENTLY IN USE
 while ($row = mysqli_fetch_assoc($results)) {
 
   echo "<tr class='item'>";

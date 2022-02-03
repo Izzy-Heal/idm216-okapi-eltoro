@@ -32,21 +32,26 @@ $results = mysqli_query($db_connection, $query);
     </nav>
     <table>
       <!-- Table headings -->
-      <tr>
-        <th>id</th>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Price</th>
-        <th>Favorite</th>
-      </tr>
-      <?php
-      // Check if the results returned anything
-        if ($results && $results->num_rows > 0) {
-            include 'build/list.php';
-        } else {
-        echo '<p>No results found.</p>';
-      }
-      ?>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Favorite</th>
+        </tr>
+      </thead>
+      <!-- Table content -->
+      <tbody>
+        <?php
+        // Check if the results returned anything
+          if ($results && $results->num_rows > 0) {
+              include 'build/list.php';
+          } else {
+          echo '<p>No results found.</p>';
+        }
+        ?>
+      </tbody>
     </table>
     
   </div>

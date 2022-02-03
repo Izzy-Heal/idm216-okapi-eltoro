@@ -48,6 +48,7 @@ th {
   font-weight: bold;
   background-color: #ff8f70;
 }
+
 td {
   font-family: "SofiaSans-Regular";
 }
@@ -66,4 +67,8 @@ td {
 
 #column-title {
   font-family: "SofiaSans-Bold";
+}
+
+.favorite {
+  background-color: gold;
 }
