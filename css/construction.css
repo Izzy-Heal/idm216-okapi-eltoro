@@ -21,7 +21,6 @@
   src: url(../fonts/Teko-Bold.ttf) format("truetype");
 }
 
-/* SF Pro Display */
 @font-face {
   font-family: "SofiaSans-Regular";
   src: url(../fonts/SofiaSans-Regular.otf) format("opentype");
