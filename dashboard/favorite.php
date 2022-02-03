@@ -26,7 +26,7 @@ $results = mysqli_query($db_connection, $query);
   </div>
 
   <div class="content">
-  <nav>
+    <nav>
       <a href='index.php'>All</a>
       <a href='favorite.php'>Favorites</a>
     </nav>
