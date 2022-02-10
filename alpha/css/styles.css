@@ -1,17 +1,17 @@
 /* Teko Bold https://fonts.google.com/specimen/Teko */
 @font-face {
   font-family: "Teko-Bold";
-  src: url(/fonts/Teko-Bold.ttf) format("truetype");
+  src: url(../fonts/Teko-Bold.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "SofiaSans-Regular";
-  src: url(/fonts/SofiaSans-Regular.otf) format("opentype");
+  src: url(../fonts/SofiaSans-Regular.otf) format("opentype");
 }
 
 @font-face {
   font-family: "SofiaSans-Bold";
-  src: url(/fonts/SofiaSans-Bold.otf) format("opentype");
+  src: url(../fonts/SofiaSans-Bold.otf) format("opentype");
 }
 
 p {
