@@ -29,6 +29,10 @@ h1 {
   padding-bottom: 0;
 }
 
+.favorite {
+  background-color: gold;
+}
+
 table, th, td {
   border: 2px solid black;
   border-collapse: collapse;
@@ -48,6 +52,7 @@ th {
   font-weight: bold;
   background-color: #ff8f70;
 }
+
 td {
   font-family: "SofiaSans-Regular";
 }
@@ -67,3 +72,5 @@ td {
 #column-title {
   font-family: "SofiaSans-Bold";
 }
+
+

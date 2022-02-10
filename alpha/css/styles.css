@@ -1,0 +1,323 @@
+/* Teko Bold https://fonts.google.com/specimen/Teko */
+@font-face {
+  font-family: "Teko-Bold";
+  src: url(/fonts/Teko-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "SofiaSans-Regular";
+  src: url(/fonts/SofiaSans-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "SofiaSans-Bold";
+  src: url(/fonts/SofiaSans-Bold.otf) format("opentype");
+}
+
+p {
+  font-family: SofiaSans-Regular;
+}
+
+header {
+  display: flex;
+  background-color: #EA663F;
+  padding: 1rem 0;
+  justify-content: space-between;
+}
+
+
+header h1 {
+  margin: 0;
+  font-family: Teko-Bold, sans-serif;
+}
+
+header img {
+  width: 40px;
+}
+
+
+.back-button, .cart {
+  width: 40px;
+}
+
+#location {
+  text-align: center;
+  font-family: SofiaSans-Regular;
+  margin: 1.4rem;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 160px);
+  grid-auto-rows: 200px;
+  grid-gap: 5px;
+  justify-content: center;
+}
+
+.grid-img p {
+  margin-top: 0.5rem;
+}
+
+.entree-img {
+  margin: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.content {
+  padding: 3rem;
+}
+
+.content p, li, a {
+  font-family: SofiaSans-Regular;
+}
+
+h1, h2, h3, h4 {
+  font-family: Teko-Bold;
+  margin:0;
+}
+
+
+
+.bottom-stick {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  width: 380px;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  background-color: #EA663F;
+  font-family: Teko-Bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 0.8rem 0;
+  margin-left: -190px;
+
+}
+
+.bottom-align {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+
+
+.btn-main {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  background-color: #EA663F;
+  font-family: Teko-Bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+  width: 90%;
+  white-space: nowrap;
+  margin: 0.65rem 0;
+}
+
+.btn-main-a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-select {
+  border: none;
+  outline: none;
+  padding: 0.6rem;
+  margin: 0.4rem 0.4rem 0.4rem 0;
+  font-family: SofiaSans-Regular;
+  background-color: #F3DAD2;
+}
+
+.pay {
+  width: 30%;
+}
+
+#confirm {
+  width: 350px;
+}
+
+#addcart {
+  width: 350px;
+
+}
+
+span {
+  font-family: SofiaSans-Bold;
+}
+
+
+.btn-select:hover {
+  background-color: #ddd;
+}
+
+.btn-select.active {
+  background-color: #B1D6A4;
+}
+
+.top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.image {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.image a {
+  color: black;
+  margin-top: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+.protein-select {
+  margin-bottom: 1rem;
+}
+
+.banner {
+  margin-bottom: 1rem;
+}
+.banner img {
+  width: 100%;
+}
+
+input {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #ECECEC;
+  font-family: SofiaSans-Regular;
+}
+
+.tip {
+  margin-bottom: 1rem;
+
+}
+
+.additional {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.additional img {
+  width: 31%;
+}
+
+.method {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#pass {
+  margin-bottom: 3rem;
+}
+
+#pickup-time {
+  margin-top: 0;
+  font-style: italic;
+}
+
+.info-modal {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  font-family: SofiaSans-Regular;
+}
+
+ /* Style the tab */
+.tab {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  font-family: Teko-Bold;
+  font-size: 1.3rem;
+  /* background-color: #f1f1f1; */
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  background-color: #F3DAD2;
+  padding: 0.5rem;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ECECEC;
+}
+
+/* Style the tab content */
+.tabcontent-show {
+  display: block;
+  background-color: #ECECEC;
+  padding: 3rem 1rem;
+} 
+
+.tabcontent {
+  display: none;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
