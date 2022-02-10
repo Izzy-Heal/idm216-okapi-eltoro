@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Toro | Alpha</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  
+</head>
+<body>
+  <header>
+    <div class="back-button"></div>
+    <h1 id="title">El Toro</h1>
+    <div class="cart"><a href="payment.html"><img src="images/cart.png" alt=""></a></div>
+  </header>
+
+  <p id="location">We are currently at: <a href="https://www.google.com/maps/place/Market+St+%26+N+33rd+St,+Philadelphia,+PA+19104/@39.9556205,-75.1916689,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6c64e283bcf5b:0xe044c8163ed6fad6!8m2!3d39.9556205!4d-75.1894802" target="_blank" rel="noopener noreferrer">33rd & Market</a></p>
+
+  <div class="tab">
+    <button class="tab-link active" onclick="openTab(event, 'Entrees')" id="defaultOpen">Entrees</button>
+    <button class="tab-link" onclick="openTab(event, 'Sides')">Sides</button>
+    <button class="tab-link" onclick="openTab(event, 'Drinks')">Drinks</button>
+    <button class="tab-link" onclick="openTab(event, 'Desserts')">Desserts</button>
+  </div>
+
+  <div id="Entrees" class="tabcontent-show">
+    <div class="grid">
+      <div class="grid-img">
+        <a href="item.html"><img src="images/taco.png" alt="#"></a>
+        <p>3 Tacos - 11.99</p>
+      </div>
+      
+      <div class="grid-img">
+        <img src="images/burrito.png" alt="#">
+        <p>Burrito - 11.99</p>
+
+      </div>
+      <div class="grid-img">
+        <img src="images/ques.png" alt="#">
+        <p>Quesadilla- 11.99</p>
+
+      </div>
+      <div class="grid-img">
+        <img src="images/bowl.png" alt="#">
+        <p>Taco Salad - 11.99</p>
+
+      </div>
+      <div class="grid-img">
+        <img src="images/burg.png" alt="#">
+        <p>GS AL Pastor Sandwich - 11.99</p>
+
+      </div>
+      <div class="grid-img">
+        <img src="images/snad.png" alt="#">
+        <p>Turkey Burger - 11.99</p>
+
+      </div>
+      <div class="grid-img">
+      <img src="images/brisk.png" alt="#">
+      <p>Brisket Cheesesteak - 11.99</p>
+        
+      </div>
+    </div>
+  </div>
+    
+  
+  <div id="Sides" class="tabcontent">
+    <div class="grid">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+    </div>
+  </div>
+  
+  <div id="Drinks" class="tabcontent">
+    <div class="grid">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+    </div>
+  </div>
+
+  <div id="Desserts" class="tabcontent">
+    <div class="grid">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+      <img class="grid-img" src="images/taco.png" alt="#">
+    </div>
+  </div>
+
+  <!-- import js -->
+  <!-- <script src="scripts/scripts.js"></script> -->
+</body>
+</html>
