@@ -10,72 +10,77 @@
 </head>
 <body>
   <header>
-    <div class="back-button"><a href="item.html"><img src="images/back.png" alt=""></a></div>
-    <h1>El Toro</h1>
-    <div class="cart"></div>
+    <nav>
+      <div class="back-button"><a href="index.html"><img src="images/back.png" alt=""></a></div>
+      <h1>EL TORO</h1>
+      <!-- blank image to center title and left align back button -->
+      <span><img aria-hidden="true" src="#" alt=""></span> 
+    </nav>
   </header>
 
 
   <div class="wrapper">
-    <div class="content">
-  <div class="top">
-    <div class="image">
-    <img src="images/taco.png" alt="#">
-    <a href="index.html">+ Add Another</a>
-  </div>
-    <ul>
-      <li>3 Tacos</li>
-      <li>Protein: Chicken</li>
-      <li>Ingredients: All</li>
-      <li>Price: 11:99</li>
-      <li>Quantity: 1</li>
-    </ul>
-  </div>
+      <div class="content">
+        <div class="payment">
+          <button class="btn-select-pro pay" id="default-item" onclick="btnToggle(event)">ASAP</button>
+          <button class="btn-select-pro pay" onclick="btnToggle(event)">3:00PM</button>
+          <button class="btn-select-pro pay" onclick="btnToggle(event)">3:15PM</button>
+        </div>
+        <h1>Items</h1>
+        
+      <div class="item-card">
+        <div class="item-top">
+          <p><span>3 Tacos</span> x1</p>
+          <p>$11.99</p>
+        </div>
+        <div class="item-bot">
+          <p><span>Order modifications:</span> N/A</p>
+          <div>
+            <a href="item.html"><img src="images/edit.png" alt="edit"></a>
+            <a href="empty.html"><img src="images/delete.png" alt="delete"></a>
+          </div>
+        </div>
+      </div>
 
-  <div class="pickup">
-    <h3>Pickup Time: 2:30PM</h3>
-  </div>
+      <a href="index.html" class="item-a">
+      <div class="item-card">
+        <div class="item-top">
+          <p><span id="grey">Add another item</span></p>
+          <img src="images/plus.png" alt="add">
+        </div>
+        </div>
+      </a>
+      <h1>Payment Option</h1>
+        <div class="payment">
+          <button class="btn-select-pay pay" id="default-item-two" onclick="btnToggleTwo(event)">Google Pay</button>
+          <button class="btn-select-pay pay" onclick="btnToggleTwo(event)">Apple Pay</button>
+          <button class="btn-select-pay pay" onclick="btnToggleTwo(event)">Venmo</button>
+        </div>
 
-  <div class="info">
-    <div>
-      <p>3 Tacos</p>
-      <p>Tax</p>
-      <p>Tip</p>
-      <p>Total</p>
+        <div class="total">
+          <div>
+            <p>Subtotal</p>
+            <p>Tax</p>
+            <p><span class="total-t">Total</span></p>
+          </div>
+          <div class="total-number">
+            <p>$11.99</p>
+            <p>$0.36</p>
+            <p><span class="total-t">$12.35</span></p>
+          </div>
+        </div>
+      </div>
+
+      
+      
+    
+
     </div>
-    <div>
-      <p>11.99</p>
-      <p>0.95</p>
-      <p>2.30</p>
-      <p>15.24</p>
+  <div class="bottom">
+    <div class="bottom-pos">
+      <button class="btn-main" id="confirm">Checkout</button>
     </div>
   </div>
-
-  <div class="tip">
-    <h3>Tip Amount</h3>
-    <button class="btn-select pay">15%</button>
-    <button class="btn-select active pay">20%</button>
-    <button class="btn-select pay">Custom</button>
-  </div>
-
-  <div class="additional">
-    <h3>Add Additional Items</h3>
-    <div class="ad-items">
-    <img src="images/rice.png" alt="#">
-    <img src="images/guac.png" alt="#">
-    <img src="images/drink.png" alt="#">
-    </div>
-  </div>
-
-  <div class="method">
-    <h3>Select Payment Method</h3>
-    <button class="btn-select active pay">Google Pay</button>
-    <button class="btn-select pay">Apple Pay</button>
-    <button class="btn-select pay">Venmo</button>
-  </div>
-
-  <button class="btn-main" id="confirm">Pay</button>
-</div>
 </div>
 
   <div id="confirm-modal" class="modal">
@@ -86,17 +91,17 @@
           <p>Total:</p>
           <p>Pickup Time:</p>
         </div>
-        <div>
-          <p>15.24</p>
+        <div class="total-number">
+          <p>$12.35</p>
           <p>2:30 PM</p>
         </div>
       </div>
-      <a class="btn-main-a" href="payment.html"><button class="btn-main">Cancel</button></a>
+      <a class="btn-main-a" href="payment.html"><button class="btn-sec">Cancel</button></a>
       <a class="btn-main-a" href="receipt.html"><button class="btn-main">Confirm and Pay</button></a>
       
     </div>
   </div>
-
+  <script src="scripts/select.js"></script>
   <script src="scripts/confirm.js"></script>
 </body>
 </html>

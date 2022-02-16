@@ -5,3 +5,4 @@ const confirm = document.getElementById("confirm");
 confirm.onclick = function() {
   modalConf.style.display = "block";
 }
+

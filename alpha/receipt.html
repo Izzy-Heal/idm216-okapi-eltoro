@@ -10,33 +10,55 @@
 </head>
 <body>
   <header>
-    <div class="back-button"><a href="index.html"><img src="images/back.png" alt=""></a></div>
-    <h1>El Toro</h1>
-    <div class="cart"><a href="payment.html"><img src="images/cart.png" alt=""></a></div>
+    <nav>
+      <div class="back-button"><a href="index.html"><img src="images/back.png" alt=""></a></div>
+      <h1>EL TORO</h1>
+      <!-- blank image to center title and left align back button -->
+      <span><img aria-hidden="true" src="#" alt=""></span> 
+    </nav>
   </header>
+
   <div class="wrapper">
     <div class="content">
 
-  <p><span>Order Information -</span> show this to the employee when picking up your order</p>
+  <p id="info-1"><span>Order Information -</span> show this to the employee when picking up your order</p>
   <h1>#4314</h1>
-  <p id="pickup-time">Pickup Time: 2:30 PM</p>
-  <div class="info">
-    <div>
-      <p>3 Tacos</p>
-      <p>Tax</p>
-      <p>Tip</p>
-      <p>Total</p>
+  <div class="pickup-info">
+    <p>Pickup Time: 2:30 PM</p>
+    <p>Google Pay</p>
+  </div>  
+
+  <div class="item-card">
+    <div class="item-top">
+      <p><span>3 Tacos</span> x1</p>
+      <p>$11.99</p>
     </div>
-    <div>
-      <p>11.99</p>
-      <p>0.95</p>
-      <p>2.30</p>
-      <p>15.24</p>
+    <div class="item-bot">
+      <p><span>Order modifications:</span> N/A</p>
+  
     </div>
   </div>
 
+  <div class="total">
+    <div>
+      <p>Subtotal</p>
+      <p>Tax</p>
+      <p><span class="total-t">Total</span></p>
+    </div>
+    <div class="total-number">
+      <p>$11.99</p>
+      <p>$0.36</p>
+      <p><span class="total-t">$12.35</span></p>
+    </div>
+  </div>
+</div>
 
-  <a class="btn-main-a" href="index.html"><button class="bottom-stick">Return to Home</button></a>
+
+<div class="bottom">
+  <div class="bottom-pos">
+    <a class="btn-main-a" href="index.html"><button class="btn-main">Return Home</button></a>
+  </div>
+</div>
 </div>
 </div>
 
