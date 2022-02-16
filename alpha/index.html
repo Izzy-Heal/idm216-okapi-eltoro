@@ -11,98 +11,164 @@
 </head>
 <body>
   <header>
-    <div class="back-button"></div>
-    <h1 id="title">El Toro</h1>
-    <div class="cart"><a href="payment.html"><img src="images/cart.png" alt=""></a></div>
+    <nav class="menu-nav">
+      <h1 id="title">EL TORO</h1>
+    </nav>
+    <div class="tab">
+      <button class="tab-link active" onclick="openTab(event, 'Entrees')" id="defaultOpen">Entrees</button>
+      <button class="tab-link" onclick="openTab(event, 'Sides')">Sides</button>
+      <button class="tab-link" onclick="openTab(event, 'Drinks')">Drinks</button>
+      <button class="tab-link" onclick="openTab(event, 'Desserts')">Desserts</button>
+    </div>
   </header>
 
-  <p id="location">We are currently at: <a href="https://www.google.com/maps/place/Market+St+%26+N+33rd+St,+Philadelphia,+PA+19104/@39.9556205,-75.1916689,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6c64e283bcf5b:0xe044c8163ed6fad6!8m2!3d39.9556205!4d-75.1894802" target="_blank" rel="noopener noreferrer">33rd & Market</a></p>
-
-  <div class="tab">
-    <button class="tab-link active" onclick="openTab(event, 'Entrees')" id="defaultOpen">Entrees</button>
-    <button class="tab-link" onclick="openTab(event, 'Sides')">Sides</button>
-    <button class="tab-link" onclick="openTab(event, 'Drinks')">Drinks</button>
-    <button class="tab-link" onclick="openTab(event, 'Desserts')">Desserts</button>
+  <div class="cart">
+    <a href="payment.html"><img src="images/cart.png" alt="cart"></a>
   </div>
 
-  <div id="Entrees" class="tabcontent-show">
-    <div class="grid">
-      <div class="grid-img">
-        <a href="item.html"><img src="images/taco.png" alt="#"></a>
-        <p>3 Tacos - 11.99</p>
-      </div>
+  
+
+  <div id="Entrees" class="tabcontent">
+    
+    <div class="menu-items">
       
-      <div class="grid-img">
-        <img src="images/burrito.png" alt="#">
-        <p>Burrito - 11.99</p>
-
+    <a class="item-a" href="item.html">
+      <div class="item">
+        <img class="item-img" src="images/taco1.png" alt="3 tacos">
+        <div class="item-info">
+          <p class="item-name">3 Tacos</p>
+          <p class="item-price">$11.99</p>
+        </div>
       </div>
-      <div class="grid-img">
-        <img src="images/ques.png" alt="#">
-        <p>Quesadilla- 11.99</p>
+    </a>
 
-      </div>
-      <div class="grid-img">
-        <img src="images/bowl.png" alt="#">
-        <p>Taco Salad - 11.99</p>
-
-      </div>
-      <div class="grid-img">
-        <img src="images/burg.png" alt="#">
-        <p>GS AL Pastor Sandwich - 11.99</p>
-
-      </div>
-      <div class="grid-img">
-        <img src="images/snad.png" alt="#">
-        <p>Turkey Burger - 11.99</p>
-
-      </div>
-      <div class="grid-img">
-      <img src="images/brisk.png" alt="#">
-      <p>Brisket Cheesesteak - 11.99</p>
-        
+    <div class="item">
+      <img class="item-img" src="images/burrito1.png" alt="burrito">
+      <div class="item-info">
+        <p class="item-name">Burrito</p>
+        <p class="item-price">$11.99</p>
       </div>
     </div>
-  </div>
+
+    <div class="item">
+      <img class="item-img" src="images/ques1.png" alt="quesadilla">
+      <div class="item-info">
+        <p class="item-name">Quesadilla</p>
+        <p class="item-price">$11.99</p>
+      </div>
+    </div>
+    
+    <div class="item">
+      <img class="item-img" src="images/salad1.png" alt="taco salad">
+      <div class="item-info">
+        <p class="item-name">Taco Salad</p>
+        <p class="item-price">$11.99</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="item-img" src="images/pastor1.png" alt="al pastor sandwich">
+      <div class="item-info">
+        <p class="item-name">GS AL Pastor Sandwich</p>
+        <p class="item-price">$11.99</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="item-img" src="images/burg1.png" alt="turkey burger">
+      <div class="item-info">
+        <p class="item-name">Turkey Burger</p>
+        <p class="item-price">$11.99</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="item-img" src="images/steak1.png" alt="brisket cheesesteak">
+      <div class="item-info">
+        <p class="item-name">Brisket Cheesesteak</p>
+        <p class="item-price">$11.99</p>
+      </div>
+    </div>
+      
+
+     
+      </div>
+    </div>
+
     
   
   <div id="Sides" class="tabcontent">
-    <div class="grid">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
+    <div class="item">
+      <img class="item-img" src="images/rice1.png" alt="mexican rice">
+      <div class="item-info">
+        <p class="item-name">Mexican Rice</p>
+        <p class="item-price">$3.00</p>
+      </div>
     </div>
+
+    <div class="item">
+      <img class="item-img" src="images/beans1.png" alt="re-fried beans">
+      <div class="item-info">
+        <p class="item-name">Re-Fried Black Beans</p>
+        <p class="item-price">$3.00</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="item-img" src="images/fries1.png" alt="french fries">
+      <div class="item-info">
+        <p class="item-name">Fresh-Cut French Fries</p>
+        <p class="item-price">$5.00</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="item-img" src="images/guac1.png" alt="guacamole">
+      <div class="item-info">
+        <p class="item-name">Guacamole</p>
+        <p class="item-price">$2.00</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="item-img" src="images/pico1.png" alt="#">
+      <div class="item-info">
+        <p class="item-name">Pico De Gallo</p>
+        <p class="item-price">$1.00</p>
+      </div>
+    </div>
+
   </div>
   
   <div id="Drinks" class="tabcontent">
-    <div class="grid">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
+    <div class="item">
+      <img class="item-img" src="images/mtn1.png" alt="mtn dew can">
+      <div class="item-info">
+        <p class="item-name">Canned Soda</p>
+        <p class="item-price">$2.00</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="item-img" src="images/water1.png" alt="water bottle">
+      <div class="item-info">
+        <p class="item-name">Water</p>
+        <p class="item-price">$1.00</p>
+      </div>
     </div>
   </div>
 
   <div id="Desserts" class="tabcontent">
-    <div class="grid">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
-      <img class="grid-img" src="images/taco.png" alt="#">
+    <div class="item">
+      <img class="item-img" src="images/chur1.png" alt="water bottle">
+      <div class="item-info">
+        <p class="item-name">Mexican Churros</p>
+        <p class="item-price">$6.00</p>
+      </div>
     </div>
   </div>
 
   <!-- import js -->
-  <!-- <script src="scripts/scripts.js"></script> -->
+  <script src="scripts/scripts.js"></script>
 </body>
 </html>

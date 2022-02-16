@@ -4,58 +4,73 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Toro | Alpha</title>
+  <title>El Toro | 3 Tacos</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-  <div class="bottom-align">
+  
   <header>
-    <div class="back-button"><a href="index.html"><img src="images/back.png" alt=""></a></div>
-    <h1>El Toro</h1>
-    <div class="cart"><a href="payment.html"><img src="images/cart.png" alt=""></a></div>
+    <nav>
+      <div class="back-button"><a href="index.html"><img src="images/back.png" alt=""></a></div>
+      <h1>EL TORO</h1>
+      <!-- blank image to center title and left align back button -->
+      <span><img aria-hidden="true" src="#" alt=""></span> 
+    </nav>
   </header>
 
+
   <div class="wrapper">
-  <div class="content">
+    <div class="content-item">
 
 
-  <div class="banner">
-    <img src="images/tacobanner.png" alt="#">
-    <h1>3 Tacos</h1>
+    <div class="banner">
+      <img src="images/taco-banner.png" alt="#">
+      <h1>3 Tacos</h1>
+    </div>
+
+    <div class="protein-select">
+      <h2>Protein - Select 1</h2>
+      <button class="btn-select-pro" id="default-item" onclick="btnToggle(event)">Chicken</button>
+      <button class="btn-select-pro" onclick="btnToggle(event)">Veggies</button>
+      <button class="btn-select-pro" onclick="btnToggle(event)">Chorizo</button>
+      <button class="btn-select-pro" onclick="btnToggle(event)">Steak (+1.25)</button>
+      <button class="btn-select-pro" onclick="btnToggle(event)">Carnitas</button>
+      <button class="btn-select-pro" onclick="btnToggle(event)">Al Pastor</button>
+      <button class="btn-select-pro" onclick="btnToggle(event)">Shrimp (+1.09)</button>
+      <button class="btn-select-pro" onclick="btnToggle(event)">Vegan Chorizo</button>
+    </div>
+
+    <div class="ingredient-select">
+      <h2>Add/Remove Ingredients</h2>
+      <button class="btn-select active" onclick="btnMulti(event)">Rice</button>
+      <button class="btn-select active" onclick="btnMulti(event)">Salsa Rojo</button>
+      <button class="btn-select active" onclick="btnMulti(event)">Salsa Verde</button>
+      <button class="btn-select active" onclick="btnMulti(event)">Onion</button>
+      <button class="btn-select active" onclick="btnMulti(event)">Cilantro</button>
+      <button class="btn-select active" onclick="btnMulti(event)">Cheese</button>
+    </div>
+
+
+
+
   </div>
 
-  <div class="protein-select">
-    <h2>Protein - Select 1</h2>
-    <button class="btn-select active" onclick="btnToggle()">Chicken</button>
-    <button class="btn-select">Veggies</button>
-    <button class="btn-select">Chorizo</button>
-    <button class="btn-select">Steak (+1.25)</button>
-    <button class="btn-select">Carnitas</button>
-    <button class="btn-select">Al Pastor</button>
-    <button class="btn-select">Shrimp (+1.09)</button>
-    <button class="btn-select">Vegan Chorizo</button>
-  </div>
 
-  <div class="ingredient-select">
-    <h2>Ingredients - Add as many as you want</h2>
-    <button class="btn-select active">Rice</button>
-    <button class="btn-select active">Salsa Rojo</button>
-    <button class="btn-select active">Salsa Verde</button>
-    <button class="btn-select active">Onion</button>
-    <button class="btn-select active">Cilantro</button>
-    <button class="btn-select active">Cheese</button>
-  </div>
+    <div class="bottom">
+      <div class="bottom-pos">
+        <button class="btn-main" id="addcart">Add to Cart</button>
+      </div>
+    </div>
 
-  <button class="btn-main" id="addcart">Add to Cart</button>
+
 </div>
-</div>
-</div>
+
+
   <div id="addcart-modal" class="modal">
     <div class="modal-content">
       <h1>Added To Cart</h1>
-      <a class="btn-main-a" href="index.html"><button class="btn-main" id="return-menu">Return to Menu</button></a>
+      <a class="btn-main-a" href="index.html"><button class="btn-main" id="return-menu">Add Another Item</button></a>
       <button class="btn-main" id="checkout">Checkout</button>
     </div>
   </div>
@@ -66,7 +81,7 @@
       <input type="text" placeholder="email@example.com" name="uname">
       <input type="password" placeholder="Password" name="psw" id="pass">
       <a class="btn-main-a" href="payment.html"><button class="btn-main" id="sign-in">Sign In</button></a>
-      <a class="btn-main-a" href="payment.html"><button class="btn-main" id="create-acc">Create Account</button></a>
+      <a class="btn-main-a" href="payment.html"><button class="btn-sec" id="create-acc">Create Account</button></a>
     </div>
   </div>
 
