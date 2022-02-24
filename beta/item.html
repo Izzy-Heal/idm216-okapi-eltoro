@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Toro | 3 Tacos</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <div class="back-button"><a href="index.html"><img src="images/back.png" alt=""></a></div>
+      <h1>EL TORO</h1>
+      <a href="https://www.google.com/maps/place/eltoroserranophillyfoodtruck/@39.9544037,-75.2069491,14z/data=!4m9!1m2!2m1!1sel+toro+serrano!3m5!1s0x89c6c75ce550fc5b:0xcba41ea0df943716!8m2!3d39.9560181!4d-75.190607!15sCg9lbCB0b3JvIHNlcnJhbm9aESIPZWwgdG9ybyBzZXJyYW5vkgESbWV4aWNhbl9yZXN0YXVyYW50"><img id="loc" src="images/loc.png" alt="location"></a>
+    </nav>
+  </header>
+
+
+  <div class="wrapper">
+    <div class="content-item">
+
+
+    <div class="banner">
+      <img src="images/taco-banner.png" alt="#">
+      <h1>3 Tacos</h1>
+    </div>
+
+    <div class="protein-select">
+      <h2>Protein - Select 1</h2>
+      <button class="btn-select-pro" id="default-item" onclick="btnToggle(event)">Chicken</button>
+      <button class="btn-select-pro" onclick="btnToggle(event)">Veggies</button>
+      <button class="btn-select-pro" onclick="btnToggle(event)">Chorizo</button>
+      <button class="btn-select-pro" onclick="btnToggle(event)">Steak (+1.25)</button>
+      <button class="btn-select-pro" onclick="btnToggle(event)">Carnitas</button>
+      <button class="btn-select-pro" onclick="btnToggle(event)">Al Pastor</button>
+      <button class="btn-select-pro" onclick="btnToggle(event)">Shrimp (+1.09)</button>
+      <button class="btn-select-pro" onclick="btnToggle(event)">Vegan Chorizo</button>
+    </div>
+
+    <div class="ingredient-select">
+      <h2>Ingredients</h2>
+      <button class="btn-select active" onclick="btnMulti(event)">Rice</button>
+      <button class="btn-select active" onclick="btnMulti(event)">Salsa Rojo</button>
+      <button class="btn-select active" onclick="btnMulti(event)">Salsa Verde</button>
+      <button class="btn-select active" onclick="btnMulti(event)">Onion</button>
+      <button class="btn-select active" onclick="btnMulti(event)">Cilantro</button>
+      <button class="btn-select active" onclick="btnMulti(event)">Cheese</button>
+    </div>
+
+    <div class="special-ins">
+      <h2>Special Instructions</h2>
+      <input placeholder="We got you." type="text" id="spec" name="spec">
+    </div>
+
+
+
+
+  </div>
+
+
+    <div class="bottom">
+      <div class="bottom-pos">
+        <button class="btn-main" id="addcart">Add to Cart</button>
+      </div>
+    </div>
+
+
+</div>
+
+
+  <div id="addcart-modal" class="modal">
+    <div class="modal-content">
+      <h1>Added To Cart</h1>
+      <a class="btn-main-a" href="index.html"><button class="btn-main" id="return-menu">Add Another Item</button></a>
+      <button class="btn-main" id="checkout">Checkout</button>
+    </div>
+  </div>
+
+  <div id="checkout-modal" class="modal">
+    <div class="modal-content">
+      <h1>Sign In</h1>
+      <input class="modal-input" type="text" placeholder="email@example.com" name="uname" required> 
+      <input class="modal-input" type="password" placeholder="Password" name="psw" id="pass" required>
+      <a class="btn-main-a" href="payment.html"><button class="btn-main" id="sign-in">Sign In</button></a>
+      <a class="btn-main-a" href="payment.html"><button class="btn-sec" id="create-acc">Create Account</button></a>
+    </div>
+  </div>
+
+  <script src="scripts/select.js"></script>
+  <script src="scripts/modal.js"></script>
+</body>
+</html>
